@@ -19,7 +19,7 @@ const formatCamelCase = (str: string): string => {
 
 export const themeOptions = [
   "light",
-  //  "dark"
+  "dark"
 ]
   .concat(Object.keys(alls))
   .filter((item) => typeof alls[item as keyof typeof alls] !== "function")
@@ -67,10 +67,7 @@ const useCodeMirrorPlayground = () => {
   };
 
   const handleChangeTheme: SelectProps["onChange"] = (value) => {
-    document.documentElement.setAttribute(
-      "data-color-mode",
-      value === "dark" ? "dark" : "light"
-    );
+   
     setTheme(value as ReactCodeMirrorProps["theme"]);
   };
 

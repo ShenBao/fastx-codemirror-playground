@@ -6,6 +6,12 @@ import type {
   BasicSetupOptions,
 } from "@uiw/react-codemirror";
 import * as alls from "@uiw/codemirror-themes-all";
+import { oneDark } from '@codemirror/theme-one-dark'
+
+const themesAllMap = {
+  ...alls,
+  dark: oneDark
+}
 
 import useCodeMirrorPlayground, {
   langOptions,
@@ -138,7 +144,7 @@ const CodeMirrorPlayground = () => {
         <CodeMirror
           value={code}
           theme={
-            alls[theme as keyof typeof alls] as ReactCodeMirrorProps["theme"]
+            themesAllMap[theme as keyof typeof themesAllMap] as ReactCodeMirrorProps["theme"] 
           }
           editable={editable}
           extensions={extensions}
