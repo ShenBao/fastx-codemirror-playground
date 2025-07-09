@@ -99,6 +99,7 @@ const CodeMirrorPlayground = () => {
           <Form.Item label="lang">
             <Select
               options={langOptions}
+              showSearch
               value={lang}
               onChange={handleChangeLang}
             />
@@ -106,6 +107,7 @@ const CodeMirrorPlayground = () => {
           <Form.Item label="themes">
             <Select
               options={themeOptions}
+              showSearch
               value={theme as string}
               onChange={handleChangeTheme}
             />

@@ -1,6 +1,6 @@
 # fastx-codemirror-playground
 
-FastX CodeMirror Playground
+[FastX CodeMirror Playground](https://shenbao.github.io/fastx-codemirror-playground/)
 
 
 ## More links
